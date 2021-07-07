@@ -29,7 +29,7 @@ var materiList = [
     harga: 'Rp. 35.000',
   ),
   Materi(
-    judul: 'Docker untuk Expert',
+    judul: 'Docker untuk Expert Mudah Cocok Untuk Pemula',
     pemateri: 'nathan docker naoval dkk',
     deskripsi: 'docker ini adalah kursus yang tidak bagus dan teori jeleklodon',
     bintang: '3',
