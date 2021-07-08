@@ -15,23 +15,23 @@ class BottomMenu extends StatelessWidget {
       },
       items: [
         BottomNavigationBarItem(
-          title: Text('Home'),
+          label: 'Home',
           icon: Icon(Icons.home),
         ),
         BottomNavigationBarItem(
-          title: Text('Search'),
+          label: 'Search',
           icon: Icon(Icons.search),
         ),
         BottomNavigationBarItem(
-          title: Text('Watch'),
+          label: 'Watch',
           icon: Icon(Icons.location_on),
         ),
         BottomNavigationBarItem(
-          title: Text('Favorite'),
+          label: 'Favorite',
           icon: Icon(Icons.favorite),
         ),
         BottomNavigationBarItem(
-          title: Text('Profile'),
+          label: 'Profile',
           icon: Icon(Icons.account_circle),
         ),
       ],

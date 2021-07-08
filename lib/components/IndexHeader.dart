@@ -2,7 +2,6 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-
 final List<String> imagesList = [
   'assets/images/header/1.jpg',
   'assets/images/header/2.jpg',
@@ -39,26 +38,16 @@ class _IndexHeaderState extends State<IndexHeader> {
               ),
               items: imagesList.map((item) {
                 return Padding(
-                  padding: const EdgeInsets.all(5.0),
+                  padding: const EdgeInsets.all(4.0),
                   child: Container(
-                    child: Card(
-                      margin: EdgeInsets.only(
-                        top: 2.0,
-                        bottom: 2.0,
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.all(
+                        Radius.circular(15.0),
                       ),
-                      elevation: 5.0,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(15.0),
-                      ),
-                      child: ClipRRect(
-                        borderRadius: BorderRadius.all(
-                          Radius.circular(15.0),
-                        ),
-                        child: Image.asset(
-                          item,
-                          fit: BoxFit.cover,
-                          width: double.infinity,
-                        ),
+                      child: Image.asset(
+                        item,
+                        fit: BoxFit.cover,
+                        width: double.infinity,
                       ),
                     ),
                   ),
@@ -77,9 +66,8 @@ class _IndexHeaderState extends State<IndexHeader> {
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(100),
                   border: Border.all(width: 0.75, color: Color(0xff326CE5)),
-                  color: _currentIndex == index
-                      ? Color(0xff326CE5)
-                      : Colors.white,
+                  color:
+                      _currentIndex == index ? Color(0xff326CE5) : Colors.white,
                 ),
               );
             }).toList(),

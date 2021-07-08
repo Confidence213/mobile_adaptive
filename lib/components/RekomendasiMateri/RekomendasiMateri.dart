@@ -1,4 +1,4 @@
-import 'package:adaptive_course/components/MateriCard.dart';
+import 'package:adaptive_course/components/RekomendasiMateri/MateriCard.dart';
 import 'package:adaptive_course/models/ListMateri.dart';
 import 'package:flutter/material.dart';
 
@@ -52,9 +52,15 @@ class _RekomendasiMateri extends State<RekomendasiMateri> {
             child: ListView.builder(
               scrollDirection: Axis.horizontal,
               itemBuilder: (context, index) {
-                return Container(
-                  child: MateriCard(
-                    listMateri: materiList[index],
+                return Padding(
+                  padding: const EdgeInsets.only(
+                    right: 7,
+                    top: 2,
+                  ),
+                  child: Container(
+                    child: MateriCard(
+                      listMateri: materiList[index],
+                    ),
                   ),
                 );
               },

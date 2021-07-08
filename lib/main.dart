@@ -1,6 +1,6 @@
 import 'package:adaptive_course/assets/HeadMenu.dart';
 import 'package:adaptive_course/assets/BottomNavigationBar.dart';
-import 'package:adaptive_course/screens/IndexScreen.dart';
+import 'package:adaptive_course/screens/Index/IndexScreen.dart';
 import 'package:flutter/material.dart';
 
 void main() {

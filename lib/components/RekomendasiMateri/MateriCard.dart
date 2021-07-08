@@ -1,6 +1,7 @@
 import 'package:adaptive_course/models/ListMateri.dart';
 import 'package:flutter/cupertino.dart';
 
+// ignore: must_be_immutable
 class MateriCard extends StatelessWidget {
   MateriCard({required this.listMateri});
 
@@ -20,11 +21,12 @@ class MateriCard extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[ 
                 ClipRRect(
-                  borderRadius: BorderRadius.circular(15.0),
+                  borderRadius: BorderRadius.all(
+                    Radius.circular(10.0),
+                  ),
                   child: Image.asset(
                     listMateri.imageMateri,
-                    width: 250,
-                    height: 150,
+                    fit: BoxFit.cover,  
                   ),
                 ),
                 SizedBox(height: 8.0,),
@@ -63,8 +65,12 @@ class MateriCard extends StatelessWidget {
                   width: 64,
                   height: 24,
                   decoration: BoxDecoration(
-                    color: Color(0xffFFE992)
+                    color: Color(0xffFFE992),
+                    borderRadius: BorderRadius.all(
+                      Radius.circular(10.0),
+                    ),
                   ),
+                  
                   child: Center(
                     child: Text(
                       'Terlaris',
