@@ -1,6 +1,6 @@
-# adaptive_course
+# Adaptive Course
 
-A new Flutter project.
+A new Flutter project by nathaniel.
 
 ## Getting Started
 
