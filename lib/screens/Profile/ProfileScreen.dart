@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
-class RegisterScreen extends StatelessWidget {
+class ProfileScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
     return Center(
       child: Text(
-        'Ini adalah register screen!'
+        'Ini adalah Profile Screen!'
       ),
     );
   }

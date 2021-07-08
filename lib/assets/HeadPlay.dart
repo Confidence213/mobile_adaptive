@@ -1,6 +1,8 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 
-class HeadMenu extends StatelessWidget implements PreferredSizeWidget {
+class HeadPlay extends StatelessWidget implements PreferredSizeWidget {
   @override
   Size get preferredSize => const Size.fromHeight(50);
   @override
@@ -9,27 +11,22 @@ class HeadMenu extends StatelessWidget implements PreferredSizeWidget {
       backgroundColor: Colors.transparent,
       bottomOpacity: 0.0,
       elevation: 0.0,
-      title: Image.asset(
-        'assets/images/logo.png',
-        height: 45,
-        width: 144,
-      ),
       actions: [
         IconButton(
           onPressed: () {},
           icon: Icon(
-            Icons.local_grocery_store,
-            color: Colors.black,
-          ),
-        ),
-        IconButton(
-          onPressed: () {},
-          icon: Icon(
-            Icons.notifications,
+            Icons.search,
             color: Colors.black,
           ),
         ),
       ],
+      title: Text(
+        'Materi Saya',
+        style: TextStyle(
+          color: Colors.black,
+          fontSize: 18,
+        ) ,
+        ),
     );
   }
 }
