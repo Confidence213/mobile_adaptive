@@ -1,5 +1,3 @@
-import 'package:adaptive_course/components/IndexHeader.dart';
-import 'package:adaptive_course/components/RekomendasiMateri/RekomendasiMateri.dart';
 import 'package:flutter/material.dart';
 
 class Tablet extends StatelessWidget {
@@ -9,7 +7,7 @@ class Tablet extends StatelessWidget {
       child: SingleChildScrollView(
         child: Column(
           children: <Widget>[
-            Text('TABLET VIEW')
+            Text('This Is Tablet View! we will add it letter')
           ],
         ),
       ),

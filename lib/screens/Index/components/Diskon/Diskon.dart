@@ -1,4 +1,4 @@
-import 'package:adaptive_course/components/Diskon/DiskonCard.dart';
+import 'package:adaptive_course/screens/Index/components/Diskon/DiskonCard.dart';
 import 'package:adaptive_course/models/ListDiskon.dart';
 import 'package:flutter/material.dart';
 

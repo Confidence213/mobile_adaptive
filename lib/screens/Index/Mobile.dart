@@ -1,7 +1,7 @@
-import 'package:adaptive_course/components/Diskon/Diskon.dart';
-import 'package:adaptive_course/components/IndexHeader.dart';
-import 'package:adaptive_course/components/PartnerBottom/PartnerBottom.dart';
-import 'package:adaptive_course/components/RekomendasiMateri/RekomendasiMateri.dart';
+import 'package:adaptive_course/screens/Index/components/Diskon/Diskon.dart';
+import 'package:adaptive_course/screens/Index/components/IndexHeader/IndexHeader.dart';
+import 'package:adaptive_course/screens/Index/components/Partner/PartnerBottom.dart';
+import 'package:adaptive_course/screens/Index/components/RekomendasiMateri/RekomendasiMateri.dart';
 import 'package:flutter/material.dart';
 
 class Mobile extends StatelessWidget {

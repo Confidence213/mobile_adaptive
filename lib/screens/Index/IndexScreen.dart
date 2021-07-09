@@ -1,4 +1,4 @@
-import 'package:adaptive_course/assets/HeadMenuIndex.dart';
+import 'package:adaptive_course/screens/Index/components/HeadMenuIndex.dart';
 import 'package:adaptive_course/screens/Index/Browser.dart';
 import 'package:adaptive_course/screens/Index/Mobile.dart';
 import 'package:adaptive_course/screens/Index/Tablet.dart';

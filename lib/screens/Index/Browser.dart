@@ -1,5 +1,3 @@
-import 'package:adaptive_course/components/IndexHeader.dart';
-import 'package:adaptive_course/components/RekomendasiMateri/RekomendasiMateri.dart';
 import 'package:flutter/material.dart';
 
 class Browser extends StatelessWidget {
@@ -9,7 +7,7 @@ class Browser extends StatelessWidget {
       child: SingleChildScrollView(
         child: Column(
           children: <Widget>[
-            Text('BROWSER VIEW')
+            Text('This Is Browser View! we will add it letter')
           ],
         ),
       ),

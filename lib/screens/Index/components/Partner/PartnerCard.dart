@@ -14,6 +14,7 @@ class PartnerCard extends StatelessWidget {
       padding: EdgeInsets.only(
         top: 2,
         left: 2,
+        bottom: 2,
       ),
       child: Row(
         children: <Widget>[

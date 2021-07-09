@@ -25,7 +25,7 @@ class HeadPlay extends StatelessWidget implements PreferredSizeWidget {
         style: TextStyle(
           color: Colors.black,
           fontSize: 18,
-        ) ,
+        ),
         ),
     );
   }

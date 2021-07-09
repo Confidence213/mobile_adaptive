@@ -1,4 +1,4 @@
-import 'package:adaptive_course/components/PartnerBottom/PartnerCard.dart';
+import 'package:adaptive_course/screens/Index/components/Partner/PartnerCard.dart';
 import 'package:adaptive_course/models/ListPartner.dart';
 import 'package:flutter/material.dart';
 

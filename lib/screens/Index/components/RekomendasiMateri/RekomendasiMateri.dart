@@ -1,4 +1,6 @@
-import 'package:adaptive_course/components/RekomendasiMateri/MateriCard.dart';
+import 'package:adaptive_course/screens/DetailMateri/DetailMateriScreen.dart';
+import 'package:adaptive_course/screens/DetailRekomendasiMateri/DetailRekomendasiMateri.dart';
+import 'package:adaptive_course/screens/Index/components/RekomendasiMateri/MateriCard.dart';
 import 'package:adaptive_course/models/ListMateri.dart';
 import 'package:flutter/material.dart';
 
@@ -27,19 +29,26 @@ class _RekomendasiMateri extends State<RekomendasiMateri> {
                   fontWeight: FontWeight.bold,
                   fontSize: 15,
                 ),
-                ),
+              ),
             ),
             Padding(
               padding: const EdgeInsets.only(
                 right: 14,
               ),
-              child: Text(
-                'Lihat Semua',
-                style: TextStyle(
-                  color: Color(0xff326CE5),
-                  fontSize: 12,
+              child: InkWell(
+                onTap: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => 
+                    DetailRekomendasiMateri()
+                  ));
+                },
+                child: Text(
+                  'Lihat Semua',
+                  style: TextStyle(
+                    color: Color(0xff326CE5),
+                    fontSize: 12,
+                  ),
                 ),
-                ),
+              ),
             )
           ],
         ),
@@ -52,14 +61,22 @@ class _RekomendasiMateri extends State<RekomendasiMateri> {
             child: ListView.builder(
               scrollDirection: Axis.horizontal,
               itemBuilder: (context, index) {
-                return Padding(
-                  padding: const EdgeInsets.only(
-                    right: 7,
-                    top: 2,
-                  ),
-                  child: Container(
-                    child: MateriCard(
-                      listMateri: materiList[index],
+                final Materi materi = materiList[index];
+                return InkWell(
+                  onTap: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context) =>
+                      DetailMateriScreen(materi: materi),
+                    ));
+                  },
+                  child: Padding(
+                    padding: const EdgeInsets.only(
+                      right: 7,
+                      top: 2,
+                    ),
+                    child: Container(
+                      child: MateriCard(
+                        listMateri: materiList[index],
+                      ),
                     ),
                   ),
                 );
