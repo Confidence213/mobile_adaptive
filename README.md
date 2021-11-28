@@ -1,16 +1,37 @@
 # Adaptive Course
 
-A new Flutter project by nathaniel.
+Adaptive course is online learning based course. written using flutter framework.
 
-## Getting Started
+### API Example
 
-This project is a starting point for a Flutter application.
+- ListMateri
+```bash
+{
+    "judul": 'Belajar Docker Dengan Mudah Cocok Untuk Pemula',
+    "pemateri": 'adaptivelab',
+    "deskripsi": 'belajar dockerizing application',
+    "bintang": '5',
+    "jumlahPenilai": '1990',
+    "imageMateri": 'assets/images/materi/kubernetes.jpg',
+    "harga": 'Rp. 535.000',
+}
+```
 
-A few resources to get you started if this is your first Flutter project:
+- ListDiskon
+```bash
+{
+    "judul": 'Belajar Flutter untuk pemula, Multi Platform Application',
+    "pemateri": 'adaptivelab',
+    "deskripsi": 'course mengenai flutter cocok untuk pemula',
+    "bintang": '5',
+    "jumlahPenilai": '323',
+    "imageMateri": 'assets/images/materi/flutter.jpg',
+    "harga": 'Rp. 435.000',
+    "hargaDiskon": 'Rp. 317.000'
+}
+```
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## [Download APK here](https://drive.google.com/file/d/1A-LIR55amPdDwBX4nXEIXYdY_ZrcNlEC/view?usp=sharing)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+  
+*Created using flutter, made with ❤️*
